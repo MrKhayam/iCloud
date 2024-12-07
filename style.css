@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #1B1A1D;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+}
+
+.icon i{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 6px;
+    border-radius: 6px;
+}
+.icon i:hover{
+    background-color: #00000062;
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.videoBox{
+    width: 400px;
+    height: 368px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+.videoBox video{
+    width: 100%;
+    height: 100%;
+}
+.icld{
+    font-size: 120px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .2s;
+}
+.btn button:hover{
+    background-color: #a8a8a8;
+}
+.heroParaBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heroPara{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+    width: 34%;
+    color: white;
+}
+.cards{
+    min-height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+.card{
+    min-height: 600px;
+    padding: 25px;
+    width: 450px;
+    background-color: #1C1C1E;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardImg{
+    width: 100%;
+    height: 30%;
+    padding-top: 40px;
+}
+.cardImg img{
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.cardHead{
+    width: 90%;
+    margin-top: 40px;
+}
+.card2 .cardImg {
+    width: 80%;
+    padding-top: 5px;
+}
+.card2 .cardHead {
+    margin-top: 10px;
+}
+.cardHead h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.cardPara{
+    width: 90%;
+    margin-top: 40px;
+}
+.cardPara p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #2C2C2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+footer ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+    color: #dadada;
+    cursor: pointer;
+}
+footer p {
+    color: #dadada;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .videoBox{
+        width: 350px;
+    height: 330px;
+    }
+    .icld{
+        font-size: 80px;
+        margin-bottom: 90px;
+    }
+    .heroPara{
+        width: 90%;
+        font-size: 20px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        min-height: 700px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
