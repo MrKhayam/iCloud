@@ -271,6 +271,10 @@ footer p {
     display: none;
 }
 
+.toShowSvg svg{
+  width: 25px;
+}
+
 .input1 .arrIcon{
     height: 100%;
     width: 10%;
